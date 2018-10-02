@@ -9,16 +9,25 @@ html {
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-size: 18px;
   color: #222;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #fefefe;
+  margin: 0;
 }
 
 header {
+  margin: 0;
+  min-height: 6em;
   background-color: #222;
+  box-shadow: rgb(49, 49, 49) 0px 2px 4px;
 }
 
 header div {
@@ -29,7 +38,7 @@ header div {
 header div h1 {
   text-align: center;
   color: #fff;
-  font-size: 2.25em;
+  font-size: 2em;
   margin: 0;
   padding: 0;
 }
@@ -42,10 +51,8 @@ main {
 main {
   margin: 0 auto;
   padding: 1em 2em;
-  /* background-color: #fff; */
+  height: 100%;
   height: 100vh;
-  /* border: 1px solid #ccc; */
-  /* box-shadow: 2px 2px 4px #ccc; */
 }
 
 h1,
@@ -83,4 +90,16 @@ li {
   height: 0;
   line-height: 0;
   border-bottom: 1px dotted #aaa;
+}
+
+@media screen and (min-width: 930px) {
+  header div h1 {
+    font-size: 2.25em;
+  }
+
+  header {
+    background-image: url(./images/brains.jpg);
+    background-size: 6em;
+    background-repeat: no-repeat;
+  }
 }
