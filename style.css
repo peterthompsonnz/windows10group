@@ -62,9 +62,21 @@ h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h2 {
+h2,
+h3 {
   color: rgb(250, 122, 17);
-  /* text-transform: uppercase; */
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 1.85em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 a {
@@ -92,13 +104,9 @@ li {
   border-bottom: 1px dotted #aaa;
 }
 
-strong {
-  font-weight: 400;
-  /* text-decoration: underline; */
-  display: inline-block;
-  /* padding-bottom: 0; */
-  border-bottom: 1px dotted #222;
-  /* color: #000; */
+em {
+  font-style: italic;
+  color: #000
 }
 
 @media screen and (min-width: 930px) {
