@@ -28,7 +28,7 @@ header {
   margin: 0;
   min-height: 6em;
   background-color: #222;
-  box-shadow: rgb(49, 49, 49) 0px 2px 4px;
+  border-bottom: 1px solid #222;
 }
 
 header div {
@@ -45,7 +45,8 @@ header div h1 {
 }
 
 header div,
-main {
+main,
+.introduction div {
   max-width: 42em;
 }
 
@@ -112,10 +113,6 @@ em {
   color: #000;
 }
 
-/* figure {
-  margin-left: 0;
-} */
-
 figure img {
   border: 1px solid #999999;
   box-shadow: 2px 2px 4px #999;
@@ -126,6 +123,29 @@ figcaption {
   text-align: center;
   font-style: italic;
   font-size: 0.9em;
+}
+
+.introduction {
+  background-color: #efefef;
+  box-shadow: rgb(109, 109, 109) 0px 2px 4px;
+}
+
+.introduction div {
+  margin: 0 auto;
+  padding: 0.5em 0em 1em;
+  color: #222;
+  font-size: 0.9em;
+}
+
+.introduction div p {
+  margin: 0;
+  font-style: italic;
+}
+
+.introduction div h2 {
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
 @media screen and (min-width: 930px) {
