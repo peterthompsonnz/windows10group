@@ -112,6 +112,22 @@ em {
   color: #000;
 }
 
+/* figure {
+  margin-left: 0;
+} */
+
+figure img {
+  border: 1px solid #999999;
+  box-shadow: 2px 2px 4px #999;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
 @media screen and (min-width: 930px) {
   header div h1 {
     font-size: 2.25em;
