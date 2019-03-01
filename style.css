@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+:root {
+  --light-blue: #00b9fc;
 }
 
 html {
@@ -12,16 +18,17 @@ html {
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
 body {
   font-size: 18px;
   color: #222;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.6;
   background-color: #fefefe;
-  margin: 0;
+  height: 100%;
+  height: 100vh;
 }
 
 header {
@@ -34,10 +41,10 @@ header {
 header div {
   margin: 0 auto;
   padding: 1em 0;
+  text-align: center;
 }
 
-header div h1 {
-  text-align: center;
+header h1 {
   color: #fff;
   font-size: 2em;
   margin: 0;
@@ -45,33 +52,25 @@ header div h1 {
 }
 
 header div,
-main,
-.introduction div {
+main {
   max-width: 42em;
 }
 
 main {
   margin: 0 auto;
-  padding: 1em 2em;
-  height: 100%;
-  height: 100vh;
+  /* padding: 0.75em 0.75em; */
 }
 
 h1,
 h2,
 h3 {
   font-weight: 400;
-  font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 0.5em;
 }
 
 h2,
 h3 {
-  color: rgb(250, 122, 17);
-}
-
-h1 {
-  font-size: 2.25em;
+  color: var(--light-blue);
 }
 
 h2 {
@@ -79,18 +78,27 @@ h2 {
 }
 
 h3 {
-  font-size: 1.55em;
+  font-size: 1.5em;
 }
 
-a {
-  padding: 0.15em 0.25em;
-  border-radius: 0.25em;
+a,
+a:active,
+a:visited {
+  color: var(--light-blue);
+  border-bottom: 2px dotted var(--light-blue);
+  padding: 0 0.2em;
+  text-decoration: none;
 }
 
 a:hover {
-  background-color: #222;
+  background-color: var(--light-blue);
   color: #fefefe;
-  text-decoration: none;
+  border-radius: 0.2em;
+}
+
+.home-link {
+  font-size: 1.5em;
+  border-bottom-width: 0;
 }
 
 ul {
@@ -99,13 +107,6 @@ ul {
 
 li {
   margin-bottom: 0.5em;
-}
-
-.divider {
-  height: 0;
-  line-height: 0;
-  border-bottom: 1px dotted #aaa;
-  margin: 2em 0;
 }
 
 em {
@@ -125,37 +126,13 @@ figcaption {
   font-size: 0.9em;
 }
 
-.introduction {
-  background-color: #efefef;
-  box-shadow: rgb(109, 109, 109) 0px 2px 4px;
-}
-
-.introduction div {
-  margin: 0 auto;
-  padding: 0.5em 0em 1em;
-  color: #222;
-  font-size: 0.9em;
-}
-
-.introduction div p {
-  margin: 0;
-  font-style: italic;
-}
-
-.introduction div h2 {
-  margin: 0;
-  padding: 0;
-  color: #222;
-}
-
-@media screen and (min-width: 930px) {
-  header div h1 {
-    font-size: 2.25em;
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url(./images/logo-h108.png);
+    background-repeat: no-repeat;
   }
 
-  header {
-    background-image: url(./images/brains.jpg);
-    background-size: 6em;
-    background-repeat: no-repeat;
+  main {
+    padding: 1em 2em;
   }
 }
