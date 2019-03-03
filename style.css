@@ -103,7 +103,7 @@ a:hover {
 
 .home-link::before {
   background: url("./images/home-32x32.png") LEFT TOP NO-REPEAT;
-  content: url("http://i.stack.imgur.com/Icd9n.png"); /* transparent pixel */
+  content: url("./images/transparent-pixel-21x21.png");
   width: 32px;
   height: 32px;
   padding-left: 20px;
