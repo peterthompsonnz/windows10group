@@ -7,8 +7,7 @@
 }
 
 :root {
-  /* --mid-blue: #00b9fc; */
-  --mid-blue: #037bd7;
+  --dark-blue: rgb(3, 88, 155);
 }
 
 html {
@@ -64,7 +63,7 @@ main {
 
 h2 {
   font-weight: 400;
-  color: var(--mid-blue);
+  color: var(--dark-blue);
   font-size: 1.75em;
   margin: 0.25em 0;
   line-height: 1.4;
@@ -73,20 +72,21 @@ h2 {
 a,
 a:active,
 a:visited {
-  color: var(--mid-blue);
-  border-bottom: 2px dotted var(--mid-blue);
+  color: var--dark-blue);
+  border-bottom: 2px dotted var(--dark-blue);
   padding: 0 0.2em;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--mid-blue);
+  background-color: var(--dark-blue);
   color: #fefefe;
   border-radius: 0.2em;
 }
 
 .home-link {
   display: inline-block;
+  color: #43bbff;
   font-size: 1.65em;
   border-bottom-width: 0;
   margin: 0.5em 0;
