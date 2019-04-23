@@ -72,7 +72,7 @@ h2 {
 a,
 a:active,
 a:visited {
-  color: var--dark-blue);
+  color: var(--dark-blue);
   border-bottom: 2px dotted var(--dark-blue);
   padding: 0 0.2em;
   text-decoration: none;
