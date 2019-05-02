@@ -7,7 +7,8 @@
 }
 
 :root {
-  --dark-blue: rgb(3, 88, 155);
+  --bright-blue: #43bbff;
+  --mid-blue: #037bd7;
 }
 
 html {
@@ -47,7 +48,6 @@ header h1 {
   font-size: 2em;
   margin: 0;
   padding: 0;
-  font-weight: 400;
 }
 
 header div,
@@ -61,43 +61,65 @@ main {
   line-height: 1.6;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 400;
-  color: var(--dark-blue);
+}
+
+h2,
+h3,
+h4 {
+  color: var(--mid-blue);
+  margin: 0.5em 0;
+}
+
+h2 {
   font-size: 1.75em;
-  margin: 0.25em 0;
-  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
 }
 
 a,
 a:active,
 a:visited {
-  color: var(--dark-blue);
-  border-bottom: 2px dotted var(--dark-blue);
+  color: var(--mid-blue);
+  border-bottom: 2px dotted var(--bright-blue);
   padding: 0 0.2em;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--dark-blue);
-  color: #fefefe;
+  background-color: var(--bright-blue);
+  color: #ffffff;
   border-radius: 0.2em;
 }
 
-.home-link {
+a.home-link {
   display: inline-block;
-  color: #43bbff;
+  color: var(--bright-blue);
   font-size: 1.65em;
   border-bottom-width: 0;
   margin: 0.5em 0;
 }
 
-.home-link::before {
+a.home-link::before {
   background: url("./images/home-32x32.png") LEFT TOP NO-REPEAT;
   content: url("./images/transparent-pixel-21x21.png");
   width: 32px;
   height: 32px;
   padding-left: 20px;
+}
+
+a.home-link:hover {
+  color: #ffffff;
 }
 
 ul {
