@@ -91,13 +91,13 @@ a,
 a:active,
 a:visited {
   color: var(--mid-blue);
-  border-bottom: 2px dotted var(--bright-blue);
+  border-bottom: 2px dotted var(--mid-blue);
   padding: 0 0.2em;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--bright-blue);
+  background-color: var(--mid-blue);
   color: #ffffff;
   border-radius: 0.2em;
 }
