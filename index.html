@@ -9,7 +9,15 @@
     />
     <title>Windows interest group resources</title>
     <link rel="canonical" href="https://windowsinterestgroup.netlify.com/" />
-    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preload" href="./style.css" as="style" />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
     <!-- Standard Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   </head>
