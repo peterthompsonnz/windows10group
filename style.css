@@ -185,7 +185,8 @@ figcaption {
 
 @media screen and (min-width: 1024px) {
   header {
-    background-image: url(./images/logo-256x256.png);
+    background-image: url(./images/logo-133x133.png);
+    /* background-image: url(./images/logo-256x256.png); */
     background-repeat: no-repeat;
     background-size: contain;
   }
