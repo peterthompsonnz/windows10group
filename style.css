@@ -1,14 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400|Roboto:400&display=swap"); */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-:root {
-  --bright-blue: #43bbff;
-  --mid-blue: #037bd7;
 }
 
 html {
@@ -25,7 +20,7 @@ body {
 body {
   font-size: 16px;
   color: #222;
-  font-family: Roboto, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
   background-color: #fefefe;
   height: 100%;
   height: 100vh;
@@ -44,7 +39,7 @@ header div {
 }
 
 header h1 {
-  font-family: Roboto Slab, sans-serif;
+  font-family: /*Roboto Slab,*/ "helvetica neue", helvetica, arial, sans-serif;
   color: #fff;
   font-size: 2em;
   margin: 0;
@@ -66,14 +61,14 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Roboto Slab, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
   font-weight: 400;
 }
 
 h2,
 h3,
 h4 {
-  color: var(--mid-blue);
+  color: #111;
   margin: 0.5em 0;
 }
 
@@ -92,19 +87,19 @@ h4 {
 a,
 a:active,
 a:visited {
-  color: var(--mid-blue);
+  color: blue;
   text-decoration: none;
-  border-bottom: 2px dotted var(--mid-blue);
+  border-bottom: 2px solid blue;
 }
 
 a:hover {
-  border-bottom: 2px solid var(--mid-blue);
+  border-bottom: 2px dotted blue;
 }
 
 a.home-link {
-  font-family: Roboto Slab, sans-serif;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
   display: inline-block;
-  color: var(--bright-blue);
+  color: blue;
   font-size: 1.5em;
   border-bottom-width: 0;
   text-decoration: none;
@@ -167,7 +162,7 @@ figcaption {
 .divider {
   width: 100%;
   height: 0;
-  border-top: 1px dotted var(--bright-blue);
+  border-top: 1px dotted blue;
   margin: 2.5em 0 2em 0;
 }
 
@@ -186,7 +181,6 @@ figcaption {
 @media screen and (min-width: 1024px) {
   header {
     background-image: url(./images/logo-133x133.png);
-    /* background-image: url(./images/logo-256x256.png); */
     background-repeat: no-repeat;
     background-size: contain;
   }
